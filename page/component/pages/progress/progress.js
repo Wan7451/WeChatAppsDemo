@@ -5,7 +5,14 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    percent:0
+  },
+
+  start: function(e){
+    var worker = wx.createWorker('../../../workers/progress.js')
+    worker.postMessage({
+      msg:'start'
+    });
   },
 
   /**

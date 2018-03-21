@@ -8,6 +8,7 @@
 
     "page/component/pages/text/text",
     "page/component/pages/icon/icon",
+    "page/component/pages/progress/progress",
     
     "page/API/index"
   ],
@@ -40,5 +41,6 @@
     "uploadFile": 10000,
     "downloadFile": 10000
   },
-  "debug":true
+  "debug":true,
+  "workers": "workers"
 }
