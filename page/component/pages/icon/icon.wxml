@@ -1,0 +1,35 @@
+<import src="../../../common.head.wxml" />
+<import src="../../../common.foot.wxml" />
+
+
+<view class='container'>
+
+  <template is="head" data="{{title: 'icon'}}" />
+
+  <view class="page-body">
+    <view class='page-section page-section-spacing'>
+
+      <view class='group'>
+        <block wx:for="{{iconSize}}" wx:key="{{*this}}">
+          <icon type='success' size='{{item}}'></icon>
+        </block>
+      </view>
+
+      <view class='group'>
+        <block wx:for="{{iconColor}}" wx:key="{{*this}}">
+          <icon type='success' color='{{item}}'></icon>
+        </block>
+      </view>
+
+
+      <view class='group'>
+        <block wx:for="{{iconType}}" wx:key="{{*this}}">
+          <icon type='{{item}}'></icon>
+        </block>
+      </view>
+
+
+    </view>
+  </view>
+  <template is="foot" />
+</view>

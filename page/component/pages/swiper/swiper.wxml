@@ -1,0 +1,86 @@
+<!--page/component/pages/swiper/swiper.wxml-->
+<import src="../../../common/head.wxml" />
+<import src="../../../common/foot.wxml" />
+
+<view class='container'>
+  <template is="head" data="{{title:'swiper'}}" />
+
+  <view class='page-body'>
+    <view class='page-section  swiper'>
+      <swiper indicator-dots="{{indicatorDots}}" duration="{{duration}}" autoplay="{{autoplay}}" interval="{{interval}}" circular="{{circular}}" indicator-color="rgba(256,256,256,0.3)"  indicator-active-color="#FFFFFF"
+      vertical="{{vertical}}"
+      display-multiple-items="1"
+
+      bindchange="pageChanged"
+        previous-margin="20rpx"  next-margin="20rpx"
+      >
+
+        <block  class="imgbg" wx:for="{{imgUrls}}" wx:key="*this">
+
+          <swiper-item>
+            <image class="swiper-item" mode="aspectFill" src="{{item}}"></image>
+          </swiper-item>
+
+        </block>
+
+      </swiper>
+    </view>
+
+    <view class='page-section' style='margin-top:40rpx; margin-bottom:0;'>
+
+      <view class='weui-cells weui-cells_after-title'>
+        <view class='weui-cell weui-cell_switch'>
+          <view class='weui-cell__bd'>指示点</view>
+          <view class='weui-cell__ft'>
+            <switch checked="{{indicatorDots}}" bindchange='changeIndicatorDots'></switch>
+          </view>
+        </view>
+     
+        <view class='weui-cell weui-cell_switch'>
+          <view class='weui-cell__bd'>自动播放</view>
+          <view class='weui-cell__ft'>
+            <switch checked="{{autoplay}}" bindchange='autoplay'></switch>
+          </view>
+        </view>
+
+        <view class='weui-cell weui-cell_switch'>
+          <view class='weui-cell__bd'>滑动方向是否为纵向</view>
+          <view class='weui-cell__ft'>
+            <switch checked="{{vertical}}" bindchange='vertical'></switch>
+          </view>
+        </view>
+
+        <view class='weui-cell weui-cell_switch'>
+          <view class='weui-cell__bd'>是否采用衔接滑动</view>
+          <view class='weui-cell__ft'>
+            <switch checked="{{circular}}" bindchange='circular'></switch>
+          </view>
+        </view>
+
+      </view>
+
+    </view>
+
+
+    <view class='page-section page-section-spacing'>
+      <view class='page-section-title'>
+        <text>幻灯片切换时长(ms)</text>
+        <text class='info'>{{duration}}</text>    
+      </view>
+      <slider bindchange='durationChange' value='{{duration}}' min="500" max='2000'></slider>
+    </view>
+
+    <view class='page-section page-section-spacing'>
+      <view class='page-section-title'>
+        <text>自动播放间隔时长(ms)</text>
+        <text class='info'>{{interval}}</text>    
+      </view>
+      <slider bindchange='intervalChange' value='{{interval}}' min="2000" max='10000'></slider>
+    </view>
+
+
+  </view>
+
+  <template is="foot"/>
+
+</view>

@@ -1,0 +1,17 @@
+/* page/component/pages/text/text.wxss */
+
+button{
+  margin: 40rpx 0;
+}
+
+.text-box{
+  margin-bottom: 70rpx;
+  padding: 40rpx 0;
+  display: flex;
+  min-height: 300rpx;
+  background-color: #FFFFFF;
+  justify-content: center;
+  text-align: center;
+  font-size: 30rpx;
+  line-height: 2em;
+}

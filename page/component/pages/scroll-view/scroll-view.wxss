@@ -1,0 +1,27 @@
+/* page/component/pages/scroll-view/scroll-view.wxss */
+.page-section-spacing{
+  margin-top: 60rpx;
+}
+.scroll-view_H{
+  white-space: nowrap;
+}
+.scroll-view-item{
+  height: 300rpx;
+}
+.scroll-view-item_H{
+  display: inline-block;
+  width: 100%;
+  height: 300rpx;
+}
+.btn-area{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.btn-flex:first-child{
+  background: #F5DE25;
+}
+
+.btn-flex:last-child{
+  background: #90D9F7;
+}
