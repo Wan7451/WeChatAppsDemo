@@ -1,2 +1,38 @@
-<!--page/component/pages/radio/radio.wxml-->
-<text>page/component/pages/radio/radio.wxml</text>
+<import src="../../../common/head.wxml" />
+<import src="../../../common/foot.wxml" />
+
+<view class='container'>
+  <template is="head" data="{{title:'radio'}}" />
+
+  <view class='page-body'>
+    <view class='page-section page-section-gap'>
+      <view class='page-section-title'>默认样式</view>
+      <label class='radio'>
+        <radio value='r1' disabled="true" color="black" checked='true'>转中</radio>
+      </label>
+      <label class='radio'>
+        <radio color='black' value='r2'>未选中</radio>
+      </label>
+    </view>
+  </view>
+
+
+  <view class='page-section'>
+    <view class='page-section-title'>推荐展示样式</view>
+    <view class="weui-cells weui-cells_after-title">
+      <radio-group bindchange="checkedChanged">
+        <label wx:for='{{items}}' wx:key="{{item.value}}" class="weui-cell weui-check__label">
+          <view class='weui-cell__hd'>
+            <radio color="red" value='{{item.value}}' checked ></radio>
+          </view>
+          <view class='weui-cell__bd'>{{item.name}}</view>
+        </label>
+
+
+      </radio-group>
+    </view>
+  </view>
+
+
+  <template is="foot" />
+</view>

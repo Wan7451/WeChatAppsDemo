@@ -1,4 +1,4 @@
-// page/component/pages/radio/radio.js
+// page/component/pages/switch/switch.js
 Page({
 
   /**
@@ -6,19 +6,13 @@ Page({
    */
   data: {
   
-    items: [
-      { value: 'USA', name: '美国' },
-      { value: 'CHN', name: '中国', checked: 'true' },
-      { value: 'BRA', name: '巴西' },
-      { value: 'JPN', name: '日本' },
-      { value: 'ENG', name: '英国' },
-      { value: 'FRA', name: '法国' },
-    ]
   },
 
-  checkedChanged: function(e){
-    console.log(e);
-    console.log("改变"+e.detail.value);
+  setting1: function(e){
+    console.log(e.detail.value);
+  },
+  setting2: function (e) {
+    console.log(e.detail.value);
   },
 
   /**

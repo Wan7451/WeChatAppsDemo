@@ -1,0 +1,42 @@
+<import src="../../../common/head.wxml" />
+<import src="../../../common/foot.wxml" />
+
+<view class='container'>
+  <template is="head" data="{{title:'switch'}}" />
+
+  <view class='page-body'>
+    <view class='page-section page-section-gap'>
+      <view class='page-section-title'>默认样式</view>
+      <label class='switch'>
+        <switch checked='true' color='red'>打开</switch>
+
+      </label>
+      <label class='switch'>
+        <switch checked='false' type='checkbox'>关闭</switch>
+      </label>
+    </view>
+
+
+
+    <view class='page-section'>
+      <view class='page-section-title'>推荐展示样式</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class='weui-cell  weui-cell_switch'>
+          <view class='weui-cell__bd'>开启中</view>
+          <view class='weui-cell__ft'>
+            <switch checked bindchange="setting1"></switch>
+          </view>
+        </view>
+        <view class='weui-cell  weui-cell_switch'>
+          <view class='weui-cell__bd'>关闭</view>
+          <view class='weui-cell__ft'>
+            <switch  bindchange="setting2"></switch>
+          </view>
+        </view>
+
+      </view>
+    </view>
+  </view>
+
+  <template is="foot" />
+</view>

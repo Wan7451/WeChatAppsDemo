@@ -1,0 +1,7 @@
+/* page/component/pages/switch/switch.wxss */
+@import "../../../common/lib/weui.wxss";
+
+.switch{
+  margin-right: 20rpx;
+  text-align: center;
+}

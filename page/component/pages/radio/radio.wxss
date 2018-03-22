@@ -1,1 +1,11 @@
 /* page/component/pages/radio/radio.wxss */
+@import "../../../common/lib/weui.wxss";
+
+
+.radio{
+  margin-right: 10rpx;
+  color: blue;
+}
+radio{
+  color: blue;
+}

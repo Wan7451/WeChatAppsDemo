@@ -13,6 +13,8 @@
     "page/component/pages/button/button",
     "page/component/pages/checkbox/checkbox",
     "page/component/pages/radio/radio",
+    "page/component/pages/slider/slider",
+    "page/component/pages/switch/switch",
     
     "page/API/index"
   ],

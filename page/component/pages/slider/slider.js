@@ -1,4 +1,4 @@
-// page/component/pages/radio/radio.js
+// page/component/pages/slider/slider.js
 Page({
 
   /**
@@ -6,19 +6,19 @@ Page({
    */
   data: {
   
-    items: [
-      { value: 'USA', name: '美国' },
-      { value: 'CHN', name: '中国', checked: 'true' },
-      { value: 'BRA', name: '巴西' },
-      { value: 'JPN', name: '日本' },
-      { value: 'ENG', name: '英国' },
-      { value: 'FRA', name: '法国' },
-    ]
   },
 
-  checkedChanged: function(e){
-    console.log(e);
-    console.log("改变"+e.detail.value);
+  slider2Changed: function(e){
+    console.log('slider 2 发生change事件，携带值为', e.detail.value)
+  },
+
+  slider3Changed: function (e) {
+    console.log('slider 3 发生change事件，携带值为', e.detail.value)
+  },
+
+
+  slider4Changed: function (e) {
+    console.log('slider 4 发生change事件，携带值为', e.detail.value)
   },
 
   /**
