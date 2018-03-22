@@ -9,6 +9,10 @@
     "page/component/pages/text/text",
     "page/component/pages/icon/icon",
     "page/component/pages/progress/progress",
+
+    "page/component/pages/button/button",
+    "page/component/pages/checkbox/checkbox",
+    "page/component/pages/radio/radio",
     
     "page/API/index"
   ],

@@ -1,0 +1,7 @@
+/* page/component/pages/checkbox/checkbox.wxss */
+@import "../../../common/lib/weui.wxss";
+
+.checkbox{
+  margin-right: 20rpx;
+  color: red;
+}

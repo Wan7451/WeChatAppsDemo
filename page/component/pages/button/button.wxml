@@ -1,0 +1,44 @@
+<import src="../../../common/head.wxml" />
+<import src="../../../common/foot.wxml" />
+
+
+<view class='container'>
+  <template is="head" data="{{title:'button'}}" />
+
+  <view class='page-body'>
+    <view class='btn-area' id='buttonContainer'>
+
+      <button class='custom' loading='true' hover-class='hover-custom' disabled='true'>我的按钮</button>
+
+      <button type='primary'>页面主操作 Normal</button>
+      <button type='primary' loading='true'> 页面主操作 Loading</button>
+      <button type='primary' disabled='true'>页面主操作 Disabled</button>
+      <button>页面次要操作 Normal</button>
+      <button  disabled='true'>页面次要操作 Disabled</button>
+      <button type='warn'>警告类操作 Normal</button>
+      <button type='warn' disabled='true'>警告类操作 Disabled</button>
+
+      <view class='button-sp-area'>
+
+        <button type='primary' plain='true'>按钮</button>
+        <button type='primary' disabled='true' plain='true'>不可点击的按钮</button>
+
+        <button type='normal' plain='true'>按钮</button>
+        <button type='normal' disabled='true' plain='true'>不可点击的按钮</button>
+
+
+        <button type='primary' size='mini' class='mini-btn'>按钮</button>
+        <button size='mini' class='mini-btn'>按钮</button>
+        <button type='warn' size='mini' class='mini-btn'>按钮</button>
+      </view>
+
+
+    </view>
+  </view>
+
+
+  <template is="foot"/>
+
+
+
+</view>
