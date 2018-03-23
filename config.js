@@ -5,18 +5,22 @@
 // 此处主机域名是腾讯云解决方案分配的域名
 // 小程序后台服务解决方案：https://www.qcloud.com/solution/la
 
-var host = "14592619.qcloud.la"
+var host = "http://192.168.203.250/"
 
-var config = {
+
+var isDebug=true;
+
+var url = {
 
   // 下面的地址配合云端 Server 工作
   host,
 
   // 登录地址，用于建立会话
-  loginUrl: `https://${host}/login`,
+  loginUrl: `${host}sso/member/weixin`,
 
+  
   // 测试的请求地址，用于测试会话
-  requestUrl: `https://${host}/testRequest`,
+  getUserInfo: `${host}wireless/account/userInfo`,
 
   // 用code换取openId
   openIdUrl: `https://${host}/openid`,
@@ -37,4 +41,4 @@ var config = {
   downloadExampleUrl: `https://${host}/static/weapp.jpg`
 };
 
-module.exports = config
+module.exports = { url, isDebug}

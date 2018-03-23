@@ -8,6 +8,10 @@ Page({
   
   },
 
+  slider1Changed: function (e) {
+    console.log('slider 1 发生change事件，携带值为', e.detail.value)
+  },
+
   slider2Changed: function(e){
     console.log('slider 2 发生change事件，携带值为', e.detail.value)
   },

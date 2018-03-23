@@ -1,2 +1,7 @@
 <!--page/API/index.wxml-->
-<text>page/API/index.wxml</text>
+
+<view>
+
+<button type='primary' bindtap='login'>login</button>
+<button type='primary' bindtap='getUserInfo'>login</button>
+</view>

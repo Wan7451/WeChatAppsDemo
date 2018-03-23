@@ -8,6 +8,24 @@ Page({
   
   },
 
+  getUserInfo:function(e){
+    var userRequest = require("../../request/UserReqest.js");
+
+    userRequest.getUserInfo();
+  },
+
+
+  login:function(e){
+    var userRequest = require("../../request/UserReqest.js");
+
+    userRequest.login();
+    
+  },
+
+
+
+
+
   /**
    * 生命周期函数--监听页面加载
    */
